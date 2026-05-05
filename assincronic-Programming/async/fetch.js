@@ -29,7 +29,7 @@
 // fetchPosts()
 
 // Adicionando parâmetros de URL
-// const userId = 200
+// const userId = 1
 // fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`)
 // .then(response => response.json())
 // .then(data => console.log(data))
@@ -80,6 +80,7 @@ throw new Error('Erro ao carregar')
 // .catch(error => {
 //     console.error("Erro ao buscar o arquivo:", error);
 // });
+
 
 
 
