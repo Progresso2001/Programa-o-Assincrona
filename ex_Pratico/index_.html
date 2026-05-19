@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Inserir texto</p>
+    <li id="il-list">Noruega</li>
+    <script>
+        const ilList = document.getElementById('il-list');
+        ilList.textContent = 'Brazil'
+        // console.log(ulList)
+        const addList = document.createElement('li');
+        addList.textContent = 'Portugal'
+        ilList.appendChild(addList)
+    </script>
+</body>
+</html>

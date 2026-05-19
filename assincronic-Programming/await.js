@@ -17,20 +17,20 @@
 // minhaPromessa()
 
 //async/await /fetch
-// async function buscarInformcoes(){
-//     try{
-//         const dados = await fetch('https://jsonplaceholder.typicode.com/posts')
-//         const response = await dados.json()
-//         console.log(response)
-//         throw new Error("Erro encontrado")
-//     }catch (erro){
-//         console.error(erro)
-//     }
-// }
-// buscarInformcoes()
-//     .then((res) => console.log(res))
-//     .then((data) => console.log(data.status))
-//     .catch((erro) => console.log(erro))
+async function buscarInformcoes(){
+    try{
+        const dados = await fetch('https://jsonplaceholder.typicode.com/posts')
+        const response = await dados.json()
+        console.log(response)
+        throw new Error("Erro encontrado")
+    }catch (erro){
+        console.error(erro)
+    }
+}
+buscarInformcoes()
+    .then((res) => console.log(res))
+    .then((data) => console.log(data.status))
+    .catch((erro) => console.log(erro))
 
 // criando um conteudo na API
 // async function criarDados() {

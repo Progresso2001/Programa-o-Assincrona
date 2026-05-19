@@ -15,16 +15,24 @@
 //     .then(res=>console.log(res))
 //     .catch(erro => console.log(erro) )
 
-function minhaPromessa(){
-    return new Promise((resolve, reject)=>{
-        const sabedoria =false;
-        if(sabedoria){
-            resolve('conhecimento adquirido')
-        }else{
-            reject('conhecimento nao adquirido')
-        }
-    })
-}
-minhaPromessa()
-    .then(sucesso => console.log(sucesso))
-    .catch(erro => console.log("O valor atribuido nao esta definido: ", erro))
+// function minhaPromessa(){
+//     return new Promise((resolve, reject)=>{
+//         const sabedoria =false;
+//         if(sabedoria){
+//             resolve('conhecimento adquirido')
+//         }else{
+//             reject('conhecimento nao adquirido')
+//         }
+//     })
+// }
+// minhaPromessa()
+//     .then(sucesso => console.log(sucesso))
+//     .catch(error =>{
+//         if(!error.undefined){
+//             console.error("Defina o erro exato")
+//         } else{
+//             console.error("verificar tipo de erro")
+//         }
+//     })
+
+

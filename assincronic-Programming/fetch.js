@@ -1,17 +1,16 @@
 // fetch('https://jsonplaceholder.typicode.com/posts/1')
 // .then(response =>{
-//     if(!response.ok){
+//     if(response.ok){
 //         throw new Error("Um erro de internet ocorreu.")
 //         // console.log(response)
 //     }
 //     return response.json()
-//     .then(data =>{
+// .then(data =>{
 //         console.log(data)
 //     })
-//     .catch(error=> {
-//         console.error('Error: ', error)
-//     })
+// .catch(error=> console.error('Error: ', error))
 // })
+
 //Usando async / await
 
 // async function fetchPosts(){
@@ -21,9 +20,9 @@
 //          throw new Error("Um erro de internet ocorreu.")
 //        }
 //        const data = await response.json()
-//        console.log(data)
+//        console.log(data.status)
 //     }catch(error){
-//         console.error('Error: ', error)
+//         console.error('Error: ', error.type)
 //     }
 // }
 // fetchPosts()
