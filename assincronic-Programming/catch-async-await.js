@@ -1,6 +1,6 @@
 async function buscarUser() {
     try{
-        let response = await fetch('https://sv443.net/jokeapi/v2/')
+        let response = await fetch('https://sv443.net/jokeapi/posts')
         if(!response.ok){
             throw new Error('Erro na resposta da API: ', response)
         }
