@@ -28,12 +28,12 @@
 
 // Suporte a CORS (Cross-Origin Resource Sharing)
 
-// fetch('https://exemplo.com/api/data', {
-//    method: 'GET',
-//    mode: 'cors'
-// })
-//     .then(response => response.json())
-//     .then(data => console.log(data))
-//     .catch(error =>console.error('Error: ', error.message))
+fetch('https://exemplo.com/api/data', {
+   method: 'GET',
+   mode: 'cors'
+})
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error =>console.error('Error: ', error.message))
 
 

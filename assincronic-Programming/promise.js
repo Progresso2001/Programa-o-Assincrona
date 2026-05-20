@@ -25,14 +25,14 @@
 //         }
 //     })
 // }
-// minhaPromessa()
-//     .then(sucesso => console.log(sucesso))
-//     .catch(error =>{
-//         if(!error.undefined){
-//             console.error("Defina o erro exato")
-//         } else{
-//             console.error("verificar tipo de erro")
-//         }
-//     })
+minhaPromessa()
+    .then(sucesso => console.log(sucesso))
+    .catch(error =>{
+        if(!error.undefined){
+            console.error("Defina o erro exato")
+        } else{
+            console.error("verificar tipo de erro")
+        }
+    })
 
 
