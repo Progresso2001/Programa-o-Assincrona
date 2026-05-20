@@ -1,6 +1,6 @@
-// fetch('https://jsonplaceholder.typicode.com/posts/1')
+// fetch('https://jsonplaceholder.typicode.com/posts/')
 // .then(response =>{
-//     if(response.ok){
+//     if(!response.ok){
 //         throw new Error("Um erro de internet ocorreu.")
 //         // console.log(response)
 //     }
@@ -13,19 +13,20 @@
 
 //Usando async / await
 
-// async function fetchPosts(){
-//     const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
-//     try{
-//          if(!response.ok){
-//          throw new Error("Um erro de internet ocorreu.")
-//        }
-//        const data = await response.json()
-//        console.log(data.status)
-//     }catch(error){
-//         console.error('Error: ', error.type)
-//     }
-// }
-// fetchPosts()
+async function fetchPosts(){
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+    try{
+        if(!response.ok){
+        throw new Error("Um erro de internet ocorreu.")
+        
+    }
+       const data = await response.json()
+       console.log(data.status)
+    }catch(error){
+        console.error('Error: ', error.type)
+    }
+}
+fetchPosts()
 
 // Adicionando parâmetros de URL
 // const userId = 1
@@ -48,18 +49,18 @@
 // fetch('https://www.w3.org/TR/PNG/iso_8859-1.txt')
 // .then(response =>response.text())
 // .then(data =>console.log(data))
-// .catch(error => console.error("Error: " + error))
+// .catch(error => console.error("Error: ", error))
 
 // Obtendo Dados Binários
 
-fetch("https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png")
-.then(response => response.blob())
-.then(blob => {
-    const url = URL.createObjectURL(blob);
-    document.getElementById('image').src = url;
-}) 
-throw new Error('Erro ao carregar')
-.catch(error => console.error('Error:', error));
+// fetch("https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png")
+// .then(response => response.blob())
+// .then(blob => {
+//     const url = URL.createObjectURL(blob);
+//     document.getElementById('image').src = url;
+// }) 
+// throw new Error('Erro ao carregar')
+// .catch(error => console.error('Error:', error));
 
 // Exemplo: Obtendo dados binários (Blob) com Fetch API
 // fetch("https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png")
